@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './../styles/Home.css';
+import './../styles/Events.css';
 
-class Home extends Component {
+class Events extends Component {
 	render() {
 		return (
-			<section className="home">
+			<section className="events">
 				<h1>Welcome to Sound Locale</h1>
 			</section>
 		);
 	}
 }
 
-export default Home;
+export default Events;

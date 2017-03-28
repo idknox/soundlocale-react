@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Home from './Home';
+import Events from './Events';
 import './../styles/App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div className="main">
 				<Header />
-				<Home />
+				<Events />
 			</div>
 		);
 	}
