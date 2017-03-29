@@ -1,0 +1,29 @@
+@import 'variables';
+
+.Event {
+  height: 50px;
+  margin-bottom: 2px;
+  padding: 20px 40px;
+  //background: #ccc;
+
+  &:nth-child(50) {
+    border: none
+  }
+
+  .name,
+  .details {
+    display: inline-block;
+  }
+
+  .name {
+    width: 60%;
+    .headliner {
+      font-size: 18px;
+    }
+
+    .opener {
+      margin-top: 2px;
+      font-size: 12px;
+    }
+  }
+}

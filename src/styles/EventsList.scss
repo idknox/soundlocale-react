@@ -1,0 +1,15 @@
+@import 'variables';
+
+.EventsList {
+  list-style: none;
+  border: 2px solid $blue;
+  padding: 0 20px;
+
+  li {
+    border-bottom: 1px solid $dark-blue;
+
+    &:nth-last-child(1) {
+      border: none;
+    }
+  }
+}

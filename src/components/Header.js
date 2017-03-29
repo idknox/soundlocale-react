@@ -6,7 +6,7 @@ class Header extends Component {
 		return (
 			<header className="header">
 				<div className="title">
-					<h1>Sound Locale</h1>
+					Sound Locale
 				</div>
 			</header>
 		);

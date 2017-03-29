@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import EventsList from './EventsList';
 import './../styles/Events.css';
 
 class Events extends Component {
+
 	render() {
 		return (
-			<section className="events">
-				<h1>Welcome to Sound Locale</h1>
+			<section className="Events">
+				<h1>Denver Shows</h1>
+				<EventsList />
 			</section>
 		);
 	}
