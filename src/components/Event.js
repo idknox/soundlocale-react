@@ -41,15 +41,15 @@ class Event extends Component {
 				</div>
 				<div className="actions">
 					<div>
-						<FaTicket className="action ticket">
-							<a href={ this.attributes().tickets }></a>
-						</FaTicket>
+						<a href={ this.attributes().tickets } target="_blank">
+							<FaTicket className="action ticket">
+							</FaTicket>
+						</a>
 						<FaMapMarker className="action marker">
-							<a></a>
 						</FaMapMarker>
 						{
 							this.attributes().youtube_video_id &&
-							<FaYoutubePlay className="action youtube" onClick={this.openYoutubePlayer.bind(this)} />
+							<FaYoutubePlay className="action youtube" onClick={this.openYoutubePlayer.bind(this)}/>
 						}
 						<FaSoundcloud className="action soundcloud">
 							<a></a>
@@ -57,7 +57,8 @@ class Event extends Component {
 					</div>
 				</div>
 			</div>
-		);
+		)
+			;
 	}
 }
 
