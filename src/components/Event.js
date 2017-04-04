@@ -6,21 +6,22 @@ import './../styles/Event.css';
 class Event extends Component {
 
 	attributes() {
-		console.log(process.env);
 		return this.props.eventData;
 	}
-	
+
 	render() {
 		return (
 			<div className="Event">
 				<div className="name">
 					<div className="headliner">
-						{this.attributes().headliner_name}
-						{this.attributes().opener_name &&
-						<div className="opener">
-							with {this.attributes().opener_name}
-						</div>
-						}
+						<a href={this.attributes().vendor_url}>
+							{this.attributes().headliner_name}
+							{this.attributes().opener_name &&
+							<div className="opener">
+								with {this.attributes().opener_name}
+							</div>
+							}
+						</a>
 					</div>
 				</div>
 				<div className="details">

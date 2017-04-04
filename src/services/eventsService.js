@@ -4,7 +4,7 @@ class EventsService {
 
 	fetch() {
 		return axios.get(
-			'http://soundlocale-api-rails.herokuapp.com/api/events.json'
+			`http://${process.env.REACT_APP_API_DOMAIN}/api/events.json`
 		)
 	}
 }
