@@ -1,0 +1,24 @@
+#youtube-player {
+  height: 200px;
+  width: 300px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  &.active {
+    animation: slideIn 1s;
+    display: block;
+
+  }
+
+  @keyframes slideIn {
+    0% {
+      bottom: -200px;
+
+    }
+
+    100% {
+      bottom: 0;
+    }
+  }
+}

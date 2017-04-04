@@ -9,6 +9,7 @@ class App extends Component {
 			<div className="main">
 				<Header />
 				<Events />
+				<div id="youtube-player"></div>
 			</div>
 		);
 	}
