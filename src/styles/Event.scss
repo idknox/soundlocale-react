@@ -1,22 +1,19 @@
 @import 'variables.scss';
 
 .Event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
   margin-bottom: 2px;
-  padding: 20px 40px;
-  //background: #ccc;
+  padding: 10px 10px 10px 0;
 
   &:nth-child(50) {
     border: none
   }
 
-  .name,
-  .details {
-    display: inline-block;
-  }
-
   .name {
-    width: 60%;
+    width: 20%;
     .headliner {
       font-size: 18px;
     }
@@ -24,6 +21,37 @@
     .opener {
       margin-top: 2px;
       font-size: 12px;
+    }
+  }
+
+  .details {
+    width: 30%;
+  }
+
+  .actions {
+    width: 20%;
+    text-align: right;
+
+    .action {
+      font-size: 28px;
+      margin-left: 15px;
+      cursor: pointer;
+
+      &.ticket:hover {
+        color: #ccc;
+      }
+
+      &.marker:hover {
+        color: #76A650;
+      }
+
+      &.youtube:hover {
+        color: #e62117;
+      }
+
+      &.soundcloud:hover {
+        color: #f50;
+      }
     }
   }
 }
