@@ -1,2 +1,3 @@
-**Node/React Frontend for Sound Locale.**
+**Node/React Frontend for Sound Locale**
 
+[Rails API](https://github.com/idknox/soundlocale-api)
