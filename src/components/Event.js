@@ -4,7 +4,7 @@ import { FaTicket, FaMapMarker, FaYoutubePlay, FaSoundcloud } from 'react-icons/
 import YTPlayer from '../players/YTPlayer';
 import './../styles/Event.css';
 
-class Event extends Component {
+export default class Event extends Component {
 
 	attributes() {
 		return this.props.eventData;
@@ -35,9 +35,6 @@ class Event extends Component {
 					<div className="venue">
 						{ moment(this.attributes().starts_at).format('h:mma') } @ { this.attributes().venue_name }
 					</div>
-					<div className="date">
-						{ moment(this.attributes().starts_at).format('MMMM Do') }
-					</div>
 				</div>
 				<div className="actions">
 					<div>
@@ -61,5 +58,3 @@ class Event extends Component {
 			;
 	}
 }
-
-export default Event;

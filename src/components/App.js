@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Events from './Events';
+import EventsPage from './EventsPage';
 import './../styles/App.css';
 
-class App extends Component {
+export default class App extends Component {
 	render() {
 		return (
 			<div className="main">
 				<Header />
-				<Events />
+				<EventsPage />
 				<div id="youtube-player"></div>
 			</div>
 		);
 	}
 }
 
-export default App;

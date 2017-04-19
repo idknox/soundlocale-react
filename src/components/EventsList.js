@@ -3,7 +3,7 @@ import EventsService from '../services/eventsService';
 import Event from './Event'
 import './../styles/EventsList.css';
 
-class EventsList extends Component {
+export default class EventsList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {denverEvents: []}
@@ -35,5 +35,3 @@ class EventsList extends Component {
 		);
 	}
 }
-
-export default EventsList;
